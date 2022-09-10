@@ -8,8 +8,8 @@ public class GameWindow extends JFrame {
 
         jframe = new JFrame();
 
-        int width = 400;
-        int height = 400;
+        int width = 1600;
+        int height = 1050;
 
         jframe.setSize(width,height);
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -7,6 +7,7 @@ import java.awt.event.KeyListener;
 
 public class KeyboardInputs implements KeyListener {
     private GamePanel gamePanel;
+    private int player_speed = 100;
     public KeyboardInputs(GamePanel gamePanel) {
         this.gamePanel = gamePanel;
     }
@@ -26,16 +27,16 @@ public class KeyboardInputs implements KeyListener {
 
         switch(e.getKeyCode()) {
             case KeyEvent.VK_W:
-                gamePanel.changeYDelta(-5);
+                gamePanel.changeYDelta(-player_speed*4);
                 break;
             case KeyEvent.VK_A:
-                gamePanel.changeXDelta(-5);
+                gamePanel.changeXDelta(-player_speed);
                 break;
-            case KeyEvent.VK_S:
-                gamePanel.changeYDelta(5);
-                break;
+//            case KeyEvent.VK_S:
+//                gamePanel.changeYDelta();
+//                break;
             case KeyEvent.VK_D:
-                gamePanel.changeXDelta(5);
+                gamePanel.changeXDelta(player_speed);
                 break;
 
 
